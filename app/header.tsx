@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Header = ({ showSideMenuHandler }: Props) => (
-    <header className='py-2 lg:py-4 px-4 lg:px-8 sticky top-0 bg-white	border-b border-solid border-[#3434341a]'>
+    <header className='py-2 lg:py-4 px-4 lg:px-8 sticky top-0 bg-white border-b border-solid border-[#3434341a] z-[1]'>
         <div className='lg:container lg:mx-auto'>
             <div className="grid grid-cols-3 items-center block lg:hidden">
                 <button
