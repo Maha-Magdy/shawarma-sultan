@@ -15,9 +15,7 @@ type VanInfo = {
 type LocationWithVanInfo = Location & { vansInfo: VanInfo[] }
 
 const PopUpLocations = async () => {
-    console.log("pop-up-locations => connecting to mongo db");
     await database();
-    console.log("pop-up-locations => connected to mongo db");
     let locations = await LocationModel.find();
 
     const getVanInfo = async (vanId: string, locationId: string) => {
