@@ -23,7 +23,7 @@ const FoodOnWheels = () => {
     }, [state]);
 
     return (
-        <main className="md:container md:mx-auto px-4 lg:px-0">
+        <main className="md:container md:mx-auto px-4 lg:px-0 mb-28">
             <section className="py-12 px-8 lg:px-40">
                 <h1 className='text-2xl lg:text-4xl text-center font-semibold underline decoration-[#f04637] mb-5'>Food Van Event Enquiries</h1>
                 <p className='text-base text-center'>

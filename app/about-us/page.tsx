@@ -3,7 +3,7 @@ import aboutUsHeroSectionPhoto from '../../public/assets/images/about-us-hero-se
 
 export default function AboutUs() {
     return (
-        <main>
+        <main className='mb-8'>
             <div className="about_us_header">
                 <div className='row-start-1 row-end-3 col-start-3 col-end-5 relative h-full flex'>
                     <Image
