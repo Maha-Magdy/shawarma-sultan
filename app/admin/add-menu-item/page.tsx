@@ -5,7 +5,6 @@ import { FormEvent, useState } from "react";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 // @ts-ignore
 import { experimental_useFormState as useFormState } from 'react-dom';
-import { uploadImage } from "@/lib/cloudinary";
 
 const initialState = {
     message: null,
