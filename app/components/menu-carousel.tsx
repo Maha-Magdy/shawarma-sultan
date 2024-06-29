@@ -58,8 +58,8 @@ const MenuCarousel = () => {
             }}
         >
             {menuItems.map((menuItem) => (
-                <div className='item'>
-                    <MenuItem key={`${menuItem.name}-${menuItem.id}`} menuItem={menuItem} />
+                <div className='item' key={`${menuItem.name}-${menuItem.id}`}>
+                    <MenuItem menuItem={menuItem} />
                 </div>
             ))}
         </OwlCarousel >

@@ -28,7 +28,7 @@ export default function AboutUs() {
                     Prepare to experience kebabs like you never have before with our delicious chicken sauce at your next event. We have developed a secret formula to make our secret recipe, our menu is the perfect mix of all mediterranean food ( shawarma - burger - grilled chicken - falafel - grilled halloumi cheese - appetiser )
                 </p>
                 <p>
-                    we are confident there is something for everyone to enjoy. You and your guests can expect freshly made hot food to enjoy the taste of our delicious. within minutes, so taste you'll be dreaming of them long after your events.  We are a family of foodies and we want to share our passion for amazing products with as many people as possible at exciting events. Our crew have been expertly crafting kebabs for 7+ years with the highest hygiene rate, so you are in good hands.
+                    we are confident there is something for everyone to enjoy. You and your guests can expect freshly made hot food to enjoy the taste of our delicious. within minutes, so taste you&apos;ll be dreaming of them long after your events.  We are a family of foodies and we want to share our passion for amazing products with as many people as possible at exciting events. Our crew have been expertly crafting kebabs for 7+ years with the highest hygiene rate, so you are in good hands.
                 </p>
             </div>
         </main>

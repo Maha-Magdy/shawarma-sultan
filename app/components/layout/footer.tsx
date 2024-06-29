@@ -38,7 +38,7 @@ const Footer = () => (
                     <p className="text-xl font-semibold tracking-[2px]">Call Us Now!</p>
                 </div>
 
-                <p>Don't be shy, we don't bite :)</p>
+                <p>Don&apos;t be shy, we don&apos;t bite :)</p>
 
                 <a href="tel:447378100033">+44 7378100033</a>
             </div>

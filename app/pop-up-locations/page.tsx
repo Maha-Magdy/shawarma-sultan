@@ -40,12 +40,12 @@ const PopUpLocations = async () => {
             <section className="py-12 px-8 lg:px-40">
                 <h1 className='text-2xl lg:text-4xl text-center font-semibold underline decoration-[#f04637] mb-5'>Where To Find Us</h1>
                 <p className='text-base text-center'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
             </section>
 
             {locationsInfo.map((locationInfo) => (
-                <section className="flex flex-col md:flex-row gap-8 lg:gap-0 justify-between items-start md:items-center p-4 pt-0 px-8 lg:px-4 mb-6 md:mb-12">
+                <section key={locationInfo._id} className="flex flex-col md:flex-row gap-8 lg:gap-0 justify-between items-start md:items-center p-4 pt-0 px-8 lg:px-4 mb-6 md:mb-12">
                     <div className="flex flex-col gap-4">
                         <div>
                             <h2 className='text-lg lg:text-2xl font-semibold mb-1'>Address</h2>
@@ -54,14 +54,14 @@ const PopUpLocations = async () => {
                             <p className="text-lg">{locationInfo.postalCode}</p>
                         </div>
                         {locationInfo.vansInfo.map((vanInfo) => (
-                            <div>
+                            <div key={vanInfo.name}>
                                 <h2 className='text-lg lg:text-2xl font-semibold mb-1 underline decoration-[#f04637]'>{vanInfo.name}</h2>
                                 <div>
                                     <h2 className='text-lg font-semibold mb-1'>Working Schedule</h2>
                                     <table>
                                         <tbody>
-                                            {vanInfo.businessHours.map((businessDay) => (
-                                                <tr>
+                                            {vanInfo.businessHours.map((businessDay, index) => (
+                                                <tr key={index}>
                                                     <td className='pr-3'>
                                                         <p className="text-lg font-semibold">{moment().day(businessDay.day).format('dddd')}</p>
                                                     </td>

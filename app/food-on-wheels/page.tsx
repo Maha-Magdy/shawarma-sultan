@@ -27,7 +27,7 @@ const FoodOnWheels = () => {
             <section className="py-12 px-8 lg:px-40">
                 <h1 className='text-2xl lg:text-4xl text-center font-semibold underline decoration-[#f04637] mb-5'>Food Van Event Enquiries</h1>
                 <p className='text-base text-center'>
-                    Shawarma Sultan is available for celebrations, weddings, birthday parties, and picnics. Whatever special event you're planning, Shawarma Sultan would love to be a part of it. We offer a variety of meal choices guaranteed to please everyone at your event. Give us a call or fill in the form below, and a member of our team will be in touch very soon!
+                    Shawarma Sultan is available for celebrations, weddings, birthday parties, and picnics. Whatever special event you&apos;re planning, Shawarma Sultan would love to be a part of it. We offer a variety of meal choices guaranteed to please everyone at your event. Give us a call or fill in the form below, and a member of our team will be in touch very soon!
                 </p>
             </section>
 
