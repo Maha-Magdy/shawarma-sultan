@@ -4,8 +4,9 @@ import { Loader } from "@googlemaps/js-api-loader";
 import { useEffect, useRef, useState } from "react";
 
 const Map = ({ address }: { address: string }) => {
-    const mapRef = useRef<>(null);
-    const [geocoder, setGeocoder] = useState<typeof google.maps.Geocoder>();
+    const mapRef = useRef<HTMLDivElement>(null);
+    // const [geocoder, setGeocoder] = useState<typeof google.maps.Geocoder>();
+    const [geocoder, setGeocoder] = useState<any>();
 
     const loader = new Loader({
         apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY!,

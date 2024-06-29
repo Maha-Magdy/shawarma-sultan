@@ -11,11 +11,3 @@ export async function GET(request: NextRequest) {
 
   return NextResponse.json(meals);
 }
-
-// export async function POST(request: NextRequest) {
-//   console.log("connecting to mongo db");
-//   await database();
-//   console.log("connected to mongo db");
-
-//   console.log("the request body is =>", request.body);
-// }
