@@ -36,7 +36,7 @@ const PopUpLocations = async () => {
     );
 
     return (
-        <main className="md:container md:mx-auto">
+        <main className="md:container md:mx-auto mb-20">
             <section className="py-12 px-8 lg:px-40">
                 <h1 className='text-2xl lg:text-4xl text-center font-semibold underline decoration-[#f04637] mb-5'>Where To Find Us</h1>
                 <p className='text-base text-center'>

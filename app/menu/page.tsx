@@ -18,7 +18,7 @@ const Menu = () => {
     }, []);
 
     return (
-        <main className='w-[100%]'>
+        <main className='w-[100%] mb-20'>
             <section className="w-[100%] h-[500px] relative">
                 <Image
                     src='/assets/images/menu-hero-section-photo.jpg'

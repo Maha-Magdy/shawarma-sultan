@@ -8,6 +8,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import Header from './header';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import Footer from './components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -48,6 +49,8 @@ export default function RootLayout({
           <Header showSideMenuHandler={showSideMenuHandler} />
 
           {children}
+
+          <Footer />
 
           <div
             className={`w-screen h-screen bg-black/[30%] top-0 z-10	${showSideMenu ? 'fixed' : 'hidden'}`}

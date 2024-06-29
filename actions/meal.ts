@@ -22,6 +22,6 @@ export async function createMeal(prevState: any, formData: FormData) {
       vegetarian: formData.get("vegetarian") === "on" ? true : false,
     });
     await meal.save();
-    console.log("done");
+    console.log("A new meal has been created!");
   } catch (e) {}
 }
