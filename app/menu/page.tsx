@@ -4,7 +4,7 @@ import MenuItem from '../components/menu-item';
 import { useEffect, useState } from 'react';
 
 async function getMenuItems() {
-    const menuItemsResponse = await fetch('http://localhost:3001/api/meals', { next: { tags: ['menuItems'] } })
+    const menuItemsResponse = await fetch('/api/meals', { next: { tags: ['menuItems'] } })
         .catch((error) => { throw new Error('failed to fetch data') });
     const menuItems = await menuItemsResponse.json();
     return menuItems;
