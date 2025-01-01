@@ -9,6 +9,7 @@ import { useState } from 'react'
 import Header from './components/layout/header';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Footer from './components/layout/footer';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Header showSideMenuHandler={showSideMenuHandler} />
 
           {children}
+          <SpeedInsights />
 
           <Footer />
 
