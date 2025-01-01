@@ -40,7 +40,7 @@ const PopUpLocations = async () => {
             <section className="py-12 px-8 lg:px-40">
                 <h1 className='text-2xl lg:text-4xl text-center font-semibold underline decoration-[#f04637] mb-5'>Where To Find Us</h1>
                 <p className='text-base text-center'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Welcome to the tasty treasure map of Sultan Catering! If you&apos;ve got an appetite as big as your dreams, you&apos;ve come to the right place. Our fabulous food vans are rolling out deliciousness across town, serving up mouthwatering meals that&apos;ll make your taste buds do a happy dance!
                 </p>
             </section>
 

@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image';
-import { MenuItem } from '../types/menu-item';
+import { MenuItem as MenuItemType } from '../types/menu-item';
 import { useEffect, useState } from 'react';
 import { Dialog, DialogHeader, DialogTrigger, DialogContent, DialogTitle, DialogDescription, DialogClose } from './ui/dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
 
 interface Props {
-    menuItem: MenuItem
+    menuItem: MenuItemType
 };
 
 const MenuItem = ({ menuItem: { imageUrl, name, description, vegetarian } }: Props) => {
@@ -19,7 +19,7 @@ const MenuItem = ({ menuItem: { imageUrl, name, description, vegetarian } }: Pro
     return (
         <Dialog>
             <DialogTrigger>
-                <div className="border border-solid border-[#3434341a] relative before:content-[''] before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-[#f04637]">
+                <div className="h-full border border-solid border-[#3434341a] relative before:content-[''] before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-[#f04637]">
                     <div className="flex flex-col gap-4 pb-4 bg-white relative shadow-sm h-full">
                         <div className='relative h-[20rem]'>
                             <Image

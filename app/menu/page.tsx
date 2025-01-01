@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image';
 import MenuItem from '../components/menu-item';
+import { MenuItem as MenuItemType } from '../types/menu-item';
 import { useEffect, useState } from 'react';
 
 async function getMenuItems() {
@@ -11,10 +12,10 @@ async function getMenuItems() {
 }
 
 const Menu = () => {
-    const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
+    const [menuItems, setMenuItems] = useState<MenuItemType[]>([]);
 
     useEffect(() => {
-        getMenuItems().then(menuItems => setMenuItems(menuItems))
+        getMenuItems().then(menuItems => setMenuItems(menuItems));
     }, []);
 
     return (
@@ -28,7 +29,7 @@ const Menu = () => {
                 />
                 <div className='flex flex-col gap-4 text-white absolute right-1/2 bottom-1/2 translate-y-1/2 translate-x-1/2 w-4/5 lg:w-auto'>
                     <h1 className='text-3xl lg:text-4xl font-semibold'>Food Menu</h1>
-                    <p className='text-sm lg:text-base'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p className='text-sm lg:text-base'>At Sultan Catering, we believe that exceptional food is at the heart of every memorable event and everyday delight. Whether you’re planning an intimate gathering, a corporate event, or simply looking for a delicious meal on the go, our diverse menu options cater to every palate and occasion. From delectable appetizers to stunning main courses and decadent desserts, our offerings are crafted with care and are sure to impress.</p>
                 </div>
             </section>
 

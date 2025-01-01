@@ -31,7 +31,7 @@ export default function Home() {
       <section className="flex flex-col items-center w-full gap-6 p-4 px-16 mb-6 md:container md:mx-auto md:px-20 lg:px-48">
         <h2 className='text-2xl lg:text-4xl font-semibold underline decoration-[#f04637]'>Our Popular Food</h2>
         <p className='text-base lg:text-center'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Please find our recommended selections from our catering menus. Whether you are looking for one of our amazing food vans, an impressive boardroom lunch, a finger food selection for clients, or food delivery for the entire company, Sultan Catering will help you choose whatever suits your needs.
         </p>
         <DynamicCarousel />
         <Link className='bg-[#f04637] hover:bg-[#e64335] py-3 px-10 text-white w-fit' href='./menu'>View All Menu</Link>
@@ -55,7 +55,7 @@ export default function Home() {
             <div className='flex flex-col items-start justify-center w-full gap-3 px-8 md:w-1/2 lg:gap-6 2xl:px-0'>
               <h2 className='text-2xl lg:text-4xl font-semibold underline decoration-[#f04637]'>Come Hungry, Leave Happy: Your Food Awaits</h2>
               <p className='text-baser'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Get ready to embark on a delicious adventure! Our Sultan Catering vans are rolling out mouthwatering options guaranteed to satisfy your cravings. Whether you&apos;re in the mood for savory bites, sweet treats, or something uniquely delightful, our food trucks are here to serve up happiness on wheels!
               </p>
               <Link href={'/pop-up-locations'} className='bg-[#f04637] hover:bg-[#e64335] py-3 px-10 text-white w-fit'>Find Us</Link>
             </div>

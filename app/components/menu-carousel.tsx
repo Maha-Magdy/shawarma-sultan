@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { MenuItem } from '../types/menu-item';
+import { MenuItem as  MenuItemType } from '../types/menu-item';
 import { useState, useEffect } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 
@@ -11,7 +11,7 @@ async function getMenuItems() {
     return menuItems;
 }
 
-const MenuItem = ({ menuItem: { imageUrl, name } }: { menuItem: MenuItem }) => {
+const MenuItem = ({ menuItem: { imageUrl, name } }: { menuItem: MenuItemType }) => {
     return (
         <div className="border-2 border-solid border-[#3434341a] relative shadow-md">
             <div className="flex flex-col gap-4 pb-4 bg-white relative h-full">
@@ -32,7 +32,7 @@ const MenuItem = ({ menuItem: { imageUrl, name } }: { menuItem: MenuItem }) => {
 }
 
 const MenuCarousel = () => {
-    const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
+    const [menuItems, setMenuItems] = useState<MenuItemType[]>([]);
 
     useEffect(() => {
         getMenuItems().then(menuItems => setMenuItems(menuItems))
