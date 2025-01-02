@@ -1,7 +1,0 @@
-Atals mongodb
-user name => shawarma-sultan-younis
-password => shawarma-sultan-younis
-
-mongodb+srv://shawarma-sultan-younis:shawarma-sultan-younis@cluster0.1dv2mtz.mongodb.net/
-
-mongodb+srv://shawarma-sultan-younis:shawarma-sultan-younis@cluster0.1dv2mtz.mongodb.net/?retryWrites=true&w=majority
