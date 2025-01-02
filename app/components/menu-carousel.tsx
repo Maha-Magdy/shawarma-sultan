@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { MenuItem as  MenuItemType } from '../types/menu-item';
+import { MenuItem as MenuItemType } from '../types/menu-item';
 import { useState, useEffect } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 
@@ -57,11 +57,14 @@ const MenuCarousel = () => {
                 }
             }}
         >
-            {menuItems.map((menuItem) => (
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            {/* {menuItems.map((menuItem) => (
                 <div className='item' key={`${menuItem.name}-${menuItem.id}`}>
                     <MenuItem menuItem={menuItem} />
                 </div>
-            ))}
+            ))} */}
         </OwlCarousel >
     )
 }
