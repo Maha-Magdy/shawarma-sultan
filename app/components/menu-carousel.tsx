@@ -39,7 +39,8 @@ const MenuCarousel = () => {
     }, []);
 
     return (
-        <OwlCarousel className='owl-theme' margin={40}
+        menuItems.length > 0 && (
+            <OwlCarousel className='owl-theme' margin={40}
             dots={false}
             responsive={{
                 0: {
@@ -57,15 +58,13 @@ const MenuCarousel = () => {
                 }
             }}
         >
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            {/* {menuItems.map((menuItem) => (
+            {menuItems.map((menuItem) => (
                 <div className='item' key={`${menuItem.name}-${menuItem.id}`}>
                     <MenuItem menuItem={menuItem} />
                 </div>
-            ))} */}
+            ))}
         </OwlCarousel >
+        )
     )
 }
 
