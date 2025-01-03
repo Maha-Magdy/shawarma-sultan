@@ -1,7 +1,12 @@
 "use server";
 
 import EventEnquiry from "@/models/eventEnquiryModel";
+import {EventEnquiry as EventEnquiryType} from "@/app/types/event-enquiry";
 import { database } from "@/lib/mongo";
+
+function sendEmail(eventEnquiry: EventEnquiryType) {
+  console.log("sending email to the team with the enquiry details =>", eventEnquiry);
+}
 
 type PrevState = {
   message: string;
@@ -30,6 +35,9 @@ export async function createEventEnquiry(
     console.log("connected to mongo db");
     await eventEnquiry.save();
     console.log("A new event enquiry has been created!");
+
+    // send email to the team with the enquiry details
+    sendEmail(eventEnquiry);
 
     return {
       message:
